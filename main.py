@@ -1,4 +1,4 @@
-import FDTGui
+
 import os
 import hashlib
 from collections import defaultdict
@@ -49,4 +49,4 @@ if __name__ == "__main__":
 
         for file_name in duplicate_files:
             csv_writer.writerow(file_name)
-    print("Thank you...The Entire Process is Complete")
+    print("Thank you...The Process has Completed Successfully")
