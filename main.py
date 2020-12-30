@@ -6,6 +6,7 @@ import csv
 
 from tkinter import*
 
+src_folder: str = "/..."
 
 def generate_md5(fname,chunk_size = 1024):
     """ This Function takes a file name and returns md5 checksum of the file """
@@ -27,7 +28,7 @@ if __name__ == "__main__":
     file_types_inscope = ["ppt","pptx","pdf","txt","html","mp4","jpg","png","xls","xlsx","xml","vsd","py","json"]
 
     #Walk through all files and folders in the directory
-    for path, dirs, files in os.walk(FDTGui.src_folder):
+    for path, dirs, files in os.walk(src_folder):
         print("Please Wait...Now Analyzing {}".format(path))
         for each_file in files:
             if each_file.split(".")[-1].lower() in file_types_inscope:
